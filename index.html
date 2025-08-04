@@ -142,12 +142,7 @@
     <!-- offcanvas-area -->
     <div class="offcanvas-menu">
       <span class="menu-close"><i class="fas fa-times"></i></span>
-      <form
-        role="search"
-        method="get"
-        id="searchform"
-        class="searchform"
-      >
+      <form role="search" method="get" id="searchform" class="searchform">
         <input
           type="text"
           name="s"
@@ -805,7 +800,7 @@
                 <div class="single-testimonial">
                   <div class="testi-author">
                     <img
-                      src="img/user/1.jpg"
+                      src="img/user/4.jpg"
                       style="
                         width: 70px;
                         height: 70px;
@@ -817,13 +812,19 @@
                     <div class="ta-info">
                       <h6>Marie Dubois</h6>
                       <span
-                        >Chef de Projet - Ministère des Affaires
+                        >Cheffe de Projet - Ministère des Affaires
                         Étrangères</span
                       >
                     </div>
                   </div>
                   <p>
-                    "Pour la rénovation complète du consulat indien, RB Concept a livré un travail exceptionnel. L'installation du système de sécurité biométrique, la réfection des bureaux consulaires et la création d'un nouveau hall d'accueil ont été réalisées en 4 mois, sans interruption de nos services. Les finitions en marbre italien et les menuiseries sur-mesure reflètent parfaitement le standing attendu."
+                    "Pour la rénovation complète du consulat indien, RB Concept
+                    a livré un travail exceptionnel. L'installation du système
+                    de sécurité biométrique, la réfection des bureaux
+                    consulaires et la création d'un nouveau hall d'accueil ont
+                    été réalisées en 4 mois, sans interruption de nos services.
+                    Les finitions en marbre italien et les menuiseries
+                    sur-mesure reflètent parfaitement le standing attendu."
                   </p>
                   <div class="qt-img">
                     <img src="img/testimonial/qt-icon.png" alt="img" />
@@ -847,7 +848,13 @@
                     </div>
                   </div>
                   <p>
-                    "L'extension de notre ambassade avec la construction d'un nouveau bâtiment administratif de 800m² était un défi. RB Concept a coordonné 12 corps de métiers, respecté le budget de 1,2M€ et livré 3 semaines avant la date prévue. Le système de ventilation double flux, les cloisons acoustiques et l'intégration parfaite avec l'architecture existante témoignent de leur expertise."
+                    "L'extension de notre ambassade avec la construction d'un
+                    nouveau bâtiment administratif de 800m² était un défi. RB
+                    Concept a coordonné 12 corps de métiers, respecté le budget
+                    de 1,2M€ et livré 3 semaines avant la date prévue. Le
+                    système de ventilation double flux, les cloisons acoustiques
+                    et l'intégration parfaite avec l'architecture existante
+                    témoignent de leur expertise."
                   </p>
 
                   <div class="qt-img">
@@ -867,14 +874,20 @@
                       alt="img"
                     />
                     <div class="ta-info">
-                      <h6>Sophie Leroy</h6>
+                      <h6>Julien Bernard</h6>
                       <span
-                        >Directrice Technique - Ministère de l'Intérieur</span
+                        >Directeur Technique - Ministère de l'Intérieur</span
                       >
                     </div>
                   </div>
                   <p>
-                    "La mise aux normes sécuritaires de nos 15 bureaux et la création d'une salle de conférence blindée ont été des chantiers techniques complexes. RB Concept a installé des cloisons anti-écoute, renforcé les structures porteuses et intégré un système de contrôle d'accès à reconnaissance faciale. Leur discrétion absolue et leur habilitation secret-défense ont été déterminantes."
+                    "La mise aux normes sécuritaires de nos 15 bureaux et la
+                    création d'une salle de conférence blindée ont été des
+                    chantiers techniques complexes. RB Concept a installé des
+                    cloisons anti-écoute, renforcé les structures porteuses et
+                    intégré un système de contrôle d'accès à reconnaissance
+                    faciale. Leur discrétion absolue et leur habilitation
+                    secret-défense ont été déterminantes."
                   </p>
                   <div class="qt-img">
                     <img src="img/testimonial/qt-icon.png" alt="img" />
@@ -883,7 +896,7 @@
                 <div class="single-testimonial">
                   <div class="testi-author">
                     <img
-                      src="img/user/4.jpg"
+                      src="img/user/1.jpg"
                       alt="img"
                       style="
                         width: 70px;
@@ -898,7 +911,14 @@
                     </div>
                   </div>
                   <p>
-                    "La réhabilitation complète de notre bâtiment historique classé était un défi architectural majeur. RB Concept a restauré les façades en pierre de taille, modernisé l'ensemble des réseaux électriques et de plomberie, tout en préservant les éléments patrimoniaux. L'installation d'un ascenseur dans la cage d'escalier du 18ème siècle relève de la prouesse technique. 18 mois de travaux sans une seule malfaçon."
+                    "La réhabilitation complète de notre bâtiment historique
+                    classé était un défi architectural majeur. RB Concept a
+                    restauré les façades en pierre de taille, modernisé
+                    l'ensemble des réseaux électriques et de plomberie, tout en
+                    préservant les éléments patrimoniaux. L'installation d'un
+                    ascenseur dans la cage d'escalier du 18ème siècle relève de
+                    la prouesse technique. 18 mois de travaux sans une seule
+                    malfaçon."
                   </p>
                   <div class="qt-img">
                     <img src="img/testimonial/qt-icon.png" alt="img" />
@@ -1007,31 +1027,31 @@
     <script src="js/element-in-view.js"></script>
     <script src="js/main.js"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const video = document.querySelector('.image-layer');
-        
+      document.addEventListener("DOMContentLoaded", function () {
+        const video = document.querySelector(".image-layer");
+
         function playVideo() {
           if (video) {
-            video.play().catch(function(error) {
-              console.log('Autoplay failed:', error);
+            video.play().catch(function (error) {
+              console.log("Autoplay failed:", error);
             });
           }
         }
-        
+
         // Force play on mobile
         if (video) {
           // Try to play immediately
           playVideo();
-          
+
           // Also try on first user interaction
-          const playOnInteraction = function() {
+          const playOnInteraction = function () {
             playVideo();
-            document.removeEventListener('touchstart', playOnInteraction);
-            document.removeEventListener('click', playOnInteraction);
+            document.removeEventListener("touchstart", playOnInteraction);
+            document.removeEventListener("click", playOnInteraction);
           };
-          
-          document.addEventListener('touchstart', playOnInteraction);
-          document.addEventListener('click', playOnInteraction);
+
+          document.addEventListener("touchstart", playOnInteraction);
+          document.addEventListener("click", playOnInteraction);
         }
       });
     </script>
