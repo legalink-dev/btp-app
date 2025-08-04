@@ -224,6 +224,7 @@
               autoplay
               muted
               loop
+              playsinline
               style="
                 position: absolute;
                 top: 0;
@@ -1005,5 +1006,34 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/element-in-view.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const video = document.querySelector('.image-layer');
+        
+        function playVideo() {
+          if (video) {
+            video.play().catch(function(error) {
+              console.log('Autoplay failed:', error);
+            });
+          }
+        }
+        
+        // Force play on mobile
+        if (video) {
+          // Try to play immediately
+          playVideo();
+          
+          // Also try on first user interaction
+          const playOnInteraction = function() {
+            playVideo();
+            document.removeEventListener('touchstart', playOnInteraction);
+            document.removeEventListener('click', playOnInteraction);
+          };
+          
+          document.addEventListener('touchstart', playOnInteraction);
+          document.addEventListener('click', playOnInteraction);
+        }
+      });
+    </script>
   </body>
 </html>
